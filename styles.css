@@ -1,0 +1,176 @@
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif; /* Aplicando a fonte Roboto */
+    margin: 0;
+    padding: 0;
+    background-color: #a0adb9;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-image: url('facens-imagem.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 75px 0;
+    text-align: center;
+}
+
+/* Estilo dos títulos */
+h1, h2 {
+    font-weight: 700; /* Negrito para títulos */
+    font-size: 25px;
+}
+
+
+h2 {
+    color: #4a90e2; /* Cor dos subtítulos */
+   
+}
+
+
+/* Estilo do botão */
+.btn {
+    display: inline-block;
+    background-color: #4a90e2; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Sem sublinhado */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+    margin-top: 15px; /* Margem superior */
+}
+
+.btn:hover {
+    background-color: #50e3c2; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-3px); /* Levanta o botão ao passar o mouse */
+}
+
+/* Estilo das seções */
+main {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+}
+
+section {
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo da lista de cursos */
+#lista-cursos {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+#lista-cursos li {
+    background: #50e3c2; /* Cor de fundo dos itens da lista */
+    color: #fff; /* Cor do texto */
+    margin: 10px 0; /* Margem entre os itens */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+#lista-cursos li:hover {
+    background: #4a90e2; /* Cor ao passar o mouse */
+    transform: translateY(-3px); /* Levanta o item ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens da lista em linha */
+    margin: 0 15px; /* Adiciona margem lateral entre os links */
+}
+
+nav ul li a {
+    color: #327ccf; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+
+nav ul li a:hover {
+    color: #ffcc00; /* Cor ao passar o mouse */
+}
+.form-group {
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+}
+
+label {
+    display: block; /* Faz o label ocupar toda a largura */
+    margin-bottom: 5px; /* Espaçamento abaixo do label */
+    font-weight: bold; /* Negrito para os labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: border-color 0.3s; /* Transição suave para a borda */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4a90e2; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+textarea {
+    height: 100px; /* Altura fixa para a área de texto */
+    resize: none; /* Remove a opção de redimensionar */
+}
+#junte-se-a-nos {
+    background: linear-gradient(90deg, #4a90e2, #50e3c2);
+    padding: 40px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+h1 {
+    color: #327ccf; /* Cor do título */
+    font-size: 50px;
+    font-family: Cambria;             
+}
+
+.btn {
+    background-color: #4a90e2; /* Cor do botão */
+    color: white; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mão ao passar o mouse */
+}
