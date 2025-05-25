@@ -1,17 +1,31 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const cursos = [
-        "Administração",
-        "Ciência da Computação",
+        "Enfermagem",
         "Engenharia Civil",
-        "Psicologia",
-        "Direito"
+        "Biomedicina",
+        "Análise e Desenvolvimento de Sistemas",
+        "Medicina",
+        "Tecnologia em Jogos Digitais",
+        "Outros"
     ];
 
-
     const formContato = document.getElementById("junte-se-a-nos");
-    formContato.addEventListener("submit", function(event) {
+    const modal = document.getElementById("modal-sucesso");
+    const fecharBtn = document.getElementById("fechar-modal");
+
+    formContato.addEventListener("submit", function (event) {
         event.preventDefault();
-        alert("Mensagem enviada com sucesso!");
+        modal.classList.add("mostrar");
         formContato.reset();
+    });
+
+    fecharBtn.addEventListener("click", function () {
+        modal.classList.remove("mostrar");
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target == modal) {
+            modal.classList.remove("mostrar");
+        }
     });
 });
