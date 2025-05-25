@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&display=swap');
+
 /* Estilo global */
 body {
-    font-family: 'Roboto', sans-serif; /* Aplicando a fonte Roboto */
+    font-family: 'Poppins', sans-serif; /* Aplicando a fonte Roboto */
     margin: 0;
     padding: 0;
     background-color: #a0adb9;
@@ -9,13 +12,74 @@ body {
 
 /* Estilo do cabeçalho */
 header {
-    background-image: url('facens-imagem.jpg');
-    background-size: cover;
+    background-image: url('facens-imagem.jpg'); 
+    background-size: cover; 
     background-position: center;
-    color: #fff;
-    padding: 75px 0;
+    padding: 100px 30px;
     text-align: center;
-}
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título do site */
+  header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease;
+  }
+  
+  /* Animação suave ao carregar */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Lista de navegação */
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  /* Cada item da lista */
+  header nav ul li {
+    display: inline-block;
+  }
+  
+  /* Links como botões */
+  header nav ul li a {
+    display: inline-block;
+    background-color: #004aad;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 74, 173, 0.3);
+  }
+  
+  /* Animação ao passar o mouse */
+  header nav ul li a:hover {
+    transform: scale(1.08);
+    background-color: #006eff;
+    box-shadow: 0 8px 20px rgba(0, 110, 255, 0.4);
+  }
 
 /* Estilo dos títulos */
 h1, h2 {
@@ -26,12 +90,14 @@ h1, h2 {
 
 h2 {
     color: #4a90e2; /* Cor dos subtítulos */
+    font-size: 45px;
    
 }
 
 
 /* Estilo do botão */
 .btn {
+    font-family: 'Poppins', sans-serif;;
     display: inline-block;
     background-color: #4a90e2; /* Cor de fundo */
     color: #fff; /* Cor do texto */
@@ -55,6 +121,35 @@ main {
     margin: 0 auto; /* Centraliza o conteúdo */
     padding: 20px; /* Espaçamento interno */
 }
+/* Seção de introdução */
+main section:first-of-type {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 900px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main section:first-of-type h2 {
+    font-size: 30px;
+    color: #004aad;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+main section:first-of-type p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+main section:first-of-type p::first-line {
+    font-weight: 700;
+}
 
 section {
     margin-bottom: 30px;
@@ -68,37 +163,208 @@ section {
 section:hover {
     transform: translateY(-5px);
 }
+/* Estilo da seção Sobre */
+#sobre {
+    font-family: 'Poppins', sans-serif;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Título */
+  #sobre h2 {
+    font-size: 32px;
+    color: #004aad;
+    margin-bottom: 20px;
+  }
+ 
+  /* Parágrafo */
+  #sobre p {
+    
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    text-align: justify;
+    white-space: pre-line;
+    
+  }
+  #sobre p::first-line {
+    font-weight: bold;
+    color: #004aad;
+  }
+  
+  
+  /* Botão "Saiba Mais" */
+  #sobre .btn {
+    display: inline-block;
+    background-color: #004aad;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 74, 173, 0.3);
+  }
+  
+  /* Animação no botão ao passar o mouse */
+  #sobre .btn:hover {
+    transform: scale(1.05);
+    background-color: #006eff;
+    box-shadow: 0 8px 20px rgba(0, 110, 255, 0.4);
+  }
+#cursos {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+    /* Título */
+#cursos h2 {
+    font-size: 32px;
+    color: #004aad;
+    margin-bottom: 20px;
+  }
+  
+  /* Parágrafo */
+  #cursos p {
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    text-align: justify;
+    white-space: pre-line;
+  }  
+  #cursos p strong {
+    color: #004aad;
+    font-weight: bold;
+  }
+  
+  #cursos p::first-line {
+    font-weight: bold;
+    color: #004aad;
+  }
 
 /* Estilo da lista de cursos */
 #lista-cursos {
     list-style: none; /* Remove os marcadores da lista */
     padding: 0; /* Remove o padding padrão */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-#lista-cursos li {
+#lista-cursos li a{
     background: #50e3c2; /* Cor de fundo dos itens da lista */
     color: #fff; /* Cor do texto */
     margin: 10px 0; /* Margem entre os itens */
-    padding: 10px; /* Espaçamento interno */
     border-radius: 5px; /* Bordas arredondadas */
-    transition: background 0.3s, transform 0.3s; /* Transições suaves */
+    background-color: #004aad;
+    text-decoration: none;
+    padding: 8.5px 17px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 74, 173, 0.3);
 }
 
 #lista-cursos li:hover {
     background: #4a90e2; /* Cor ao passar o mouse */
     transform: translateY(-3px); /* Levanta o item ao passar o mouse */
+    transform: scale(1.05);
+    background-color: #006eff;
+    box-shadow: 0 8px 20px rgba(0, 110, 255, 0.4);
+}
+/* Estilo da seção Prédios */
+#predios {
+    font-family: 'Poppins', sans-serif;
+    max-width: 800px;
+    margin: 50px auto;
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  /* Lista de prédios */
+.predios-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+.predio h3 {
+    color: #004aad;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
-/* Estilo do rodapé */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
+.predio-imagem {
     width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
 }
+
+.predio p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.5;
+}
+  
+  /* Título */
+  #predios h2 {
+    font-size: 32px;
+    color: #004aad;
+    margin-bottom: 20px;
+  }
+  
+  /* Parágrafo */
+  #predios p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    text-align: justify;
+    white-space: pre-line;
+  }
+  
+  /* Botão "Visite a Página dos Prédios" */
+  #predios .btn {
+    display: inline-block;
+    background-color: #004aad;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 74, 173, 0.3);
+  }
+  
+  /* Animação no botão ao passar o mouse */
+  #predios .btn:hover {
+    transform: scale(1.05);
+    background-color: #006eff;
+    box-shadow: 0 8px 20px rgba(0, 110, 255, 0.4);
+  }                                                                                 
+
 nav ul {
     list-style: none; /* Remove os marcadores da lista */
     padding: 0; /* Remove o padding padrão */
@@ -153,12 +419,83 @@ textarea {
     resize: none; /* Remove a opção de redimensionar */
 }
 #junte-se-a-nos {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;;
     background: linear-gradient(90deg, #4a90e2, #50e3c2);
-    padding: 40px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
+/* Título */
+#junte-se-a-nos h1 {
+    font-size: 45px;
+    color: #004aad;
+    margin-bottom: 20px;
+  }
+  
+  /* Parágrafo */
+  #junte-se-a-nos p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    text-align: justify;
+    white-space: pre-line;
+  }
+  
+  /* Formulário */
+  #form-cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+  
+  /* Grupos do formulário */
+  #form-cadastro .form-group {
+    text-align: left;
+  }
+  
+  /* Rótulos */
+  #form-cadastro label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #004aad;
+  }
+  
+  /* Campos de entrada e select */
+  #form-cadastro input,
+  #form-cadastro select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
+  
+  /* Botão de envio */
+  #form-cadastro .btn {
+    background-color: #004aad;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 74, 173, 0.3);
+    cursor: pointer;
+    border: none;
+  }
+  
+  /* Animação do botão */
+  #form-cadastro .btn:hover {
+    transform: scale(1.05);
+    background-color: #006eff;
+    box-shadow: 0 8px 20px rgba(0, 110, 255, 0.4);
+  }
 
 h1 {
     color: #327ccf; /* Cor do título */
@@ -174,32 +511,86 @@ h1 {
     border-radius: 5px; /* Bordas arredondadas */
     cursor: pointer; /* Mão ao passar o mouse */
 }
-@media (max-width: 480px) {
+section p::first-line {
+    font-weight: bold;
+    color: #004aad;
+  }
+   /* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #003366;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
 
-    h1 {
-        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
-        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+.modal.mostrar {
+    display: flex;
+}
+
+.modal-conteudo {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.3s ease;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.modal-conteudo h2 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.modal-conteudo p {
+    font-size: 16px;
+    color: #333;
+}
+
+.fechar {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    color: #000;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
     }
-
-    section input {
-        width: 17rem; /* Largura total dos inputs em telas pequenas */
-    }
-
-    section button {
-        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
-        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
-    }
-
-    .resultados-pesquisa {
-        width: 90%; /* Largura da caixa de resultados em telas pequenas */
-        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
-    }
-
-    .item-resultado h2 {
-        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
-    }
-
-    footer {
-        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+  
