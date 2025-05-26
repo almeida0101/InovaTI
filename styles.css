@@ -193,6 +193,11 @@ section:hover {
     white-space: pre-line;
     
   }
+  #sobre p strong {
+    color: #004aad;
+    font-weight: bold;
+  }
+  
   #sobre p::first-line {
     font-weight: bold;
     color: #004aad;
@@ -289,7 +294,7 @@ section:hover {
 /* Estilo da seção Prédios */
 #predios {
     font-family: 'Poppins', sans-serif;
-    max-width: 800px;
+    max-width: 1200px; /* alterado de 800px para 1200px */
     margin: 50px auto;
     background: linear-gradient(145deg, #f0f0f0, #ffffff);
     text-align: center;
@@ -297,17 +302,19 @@ section:hover {
     border-radius: 16px;
     padding: 20px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  }
-  /* Lista de prédios */
+}
+
+/* Lista de prédios */
 .predios-lista {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 30px;
     padding: 40px;
-    max-width: 1200px;
+    max-width: 1200px; /* alterado de 800px para 1200px */
     margin: auto;
     font-family: 'Poppins', sans-serif;
 }
+
 .predio h3 {
     color: #004aad;
     font-size: 24px;
@@ -320,6 +327,8 @@ section:hover {
     height: auto;
     border-radius: 12px;
     margin-bottom: 15px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .predio p {
@@ -343,6 +352,15 @@ section:hover {
     line-height: 1.8;
     text-align: justify;
     white-space: pre-line;
+  }
+   #predios p strong {
+    color: #004aad;
+    font-weight: bold;
+  }
+  
+  #predios p::first-line {
+    font-weight: bold;
+    color: #004aad;
   }
   
   /* Botão "Visite a Página dos Prédios" */
@@ -443,6 +461,15 @@ textarea {
     line-height: 1.8;
     text-align: justify;
     white-space: pre-line;
+  }
+  #junte-se-a-nos p strong {
+    color: #004aad;
+    font-weight: bold;
+  }
+  
+  #junte-se-a-nos p::first-line {
+    font-weight: bold;
+    color: #004aad;
   }
   
   /* Formulário */
