@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Tudo sobre a FACENS</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
+<script>
+    (function(){
+        emailjs.init("SEU_PUBLIC_KEY_AQUI"); // Substitua pelo seu Public Key
+    })();
+</script>
+
 </head>
 <body>
     <header>
@@ -83,32 +91,27 @@
             <div class="prova-social">
             </div>
             <form id="form-cadastro">
-                <div class="form-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" required>
-                </div>
-                <div class="form-group">
-                    <label for="interesses">Áreas de Interesse:</label>
-                    <select id="interesses" required>
-                        <option value="">Selecione uma opção</option>
-                        <option value="enfermagem">Enfermagem</option>
-                        <option value="engenharia-civil">Engenharia Civil</option>
-                        <option value="analise-e-desenvolvimento-de-sistemas">Análise e Desenvolvimento de Sistemas</option>
-                        <option value="medicina">Medicina</option>
-                        <option value="tecnologia-em-jogos-digitais">Tecnologia em Jogos Digitais</option>
-                        <option value="outros">Outros</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn">Cadastrar Agora</button>
-            </form>
+    <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+    </div>
+    <div class="form-group">
+        <label for="interesses">Áreas de Interesse:</label>
+        <select id="interesses" name="interesses" required>
+            <!-- opções -->
+        </select>
+    </div>
+    <button type="submit" class="btn">Cadastrar Agora</button>
+</form>
+
             <div class="urgencia">
             </div>
         </section>                                                                                                              
