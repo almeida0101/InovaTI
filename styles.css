@@ -163,66 +163,55 @@ section {
 section:hover {
     transform: translateY(-5px);
 }
-/* Estilo da seção Sobre */
-#sobre {
-    font-family: 'Poppins', sans-serif;
-    max-width: 800px;
+/* Estilo da página Sobre */
+main.sobre {
+    max-width: 1200px;
     margin: 50px auto;
-    padding: 40px;
-    background: linear-gradient(145deg, #f0f0f0, #ffffff);
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  /* Título */
-  #sobre h2 {
-    font-size: 32px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+}
+
+main.sobre section {
+    margin-bottom: 30px;
+}
+
+main.sobre h2 {
     color: #004aad;
-    margin-bottom: 20px;
-  }
- 
-  /* Parágrafo */
-  #sobre p {
-    
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+main.sobre p {
     font-size: 16px;
     color: #333;
-    margin-bottom: 30px;
-    line-height: 1.8;
     text-align: justify;
-    white-space: pre-line;
-    
-  }
-  #sobre p strong {
-    color: #004aad;
-    font-weight: bold;
-  }
-  
-  #sobre p::first-line {
-    font-weight: bold;
-    color: #004aad;
-  }
-  
-  
-  /* Botão "Saiba Mais" */
-  #sobre .btn {
+}
+
+/* Botão para o site da Facens */
+.botao-site {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-sobre {
     display: inline-block;
     background-color: #004aad;
-    color: white;
+    color: #fff;
+    padding: 14px 28px;
     text-decoration: none;
-    padding: 15px 30px;
     border-radius: 10px;
     font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 74, 173, 0.3);
-  }
-  
-  /* Animação no botão ao passar o mouse */
-  #sobre .btn:hover {
-    transform: scale(1.05);
-    background-color: #006eff;
-    box-shadow: 0 8px 20px rgba(0, 110, 255, 0.4);
-  }
+    transition: background-color 0.3s ease;
+}
+
+.btn-sobre:hover {
+    background-color: #003080;
+}
+
 #cursos {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
@@ -618,6 +607,3 @@ footer {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-
-
-  
